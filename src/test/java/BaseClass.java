@@ -3,12 +3,8 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 import pages.AvailableNetworksPage;
-
 import java.net.MalformedURLException;
-
-import static org.testng.Assert.assertTrue;
 
 public class BaseClass {
     protected AvailableNetworksPage availableNetworksPage;
