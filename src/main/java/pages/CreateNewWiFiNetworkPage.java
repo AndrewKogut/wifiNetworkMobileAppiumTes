@@ -8,8 +8,8 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClick
 
 public class CreateNewWiFiNetworkPage {
 
-    WebDriver driver;
-    WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
 
     public CreateNewWiFiNetworkPage(WebDriver driver) {
         this.driver = driver;

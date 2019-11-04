@@ -10,8 +10,8 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElemen
 
 public class AvailableNetworksPage {
 
-    WebDriver driver;
-    WebDriverWait wait;
+    private WebDriver driver;
+    private WebDriverWait wait;
 
     public AvailableNetworksPage(WebDriver driver) {
         this.driver = driver;

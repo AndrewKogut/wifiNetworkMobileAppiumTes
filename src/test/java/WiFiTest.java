@@ -9,12 +9,12 @@ public class WiFiTest extends BaseClass {
         String network1 = "test";
         String network2 = "123456";
         availableNetworksPage.tapOnAddWifiNetworkButton()
-                .setSSID(network2)
-                .tapOnCreateWiFiButton()
-                .tapOnAddWifiNetworkButton()
                 .setSSID(network1)
                 .tapOnCreateWiFiButton()
-                .selectWiFiNetwork(network1);
-        assertTrue(availableNetworksPage.getSelectedNetwork().contains(network1));
+                .tapOnAddWifiNetworkButton()
+                .setSSID(network2)
+                .tapOnCreateWiFiButton()
+                .selectWiFiNetwork(network2);
+        assertTrue(availableNetworksPage.getSelectedNetwork().contains(network2));
     }
 }
