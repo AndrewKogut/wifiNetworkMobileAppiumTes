@@ -5,16 +5,12 @@ import static org.testng.Assert.assertTrue;
 public class WiFiTest extends BaseClass {
 
     @Test
-    public void sampleTest() {
-        String network1 = "test";
-        String network2 = "123456";
+    public void addWiFiNetworkTest() {
+        String networkName = "test";
         availableNetworksPage.tapOnAddWifiNetworkButton()
-                .setSSID(network1)
+                .setSSID(networkName)
                 .tapOnCreateWiFiButton()
-                .tapOnAddWifiNetworkButton()
-                .setSSID(network2)
-                .tapOnCreateWiFiButton()
-                .selectWiFiNetwork(network2);
-        assertTrue(availableNetworksPage.getSelectedNetwork().contains(network2));
+                .selectWiFiNetwork(networkName);
+        assertTrue(availableNetworksPage.getSelectedNetwork().contains(networkName));
     }
 }
